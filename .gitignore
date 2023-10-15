@@ -29,7 +29,7 @@
 /bin/*
 !bin/console
 !bin/symfony_requirements
-/vendor/
+/sources/*/*
 
 # Assets and user uploads
 /web/bundles/
@@ -50,3 +50,29 @@
 
 # Embedded web-server pid file
 /.web-server-pid
+
+/.idea
+
+###> symfony/framework-bundle ###
+/.env
+/.env.local
+/.env.local.php
+/.env.*.local
+/config/secrets/prod/prod.decrypt.private.php
+/public/bundles/
+/var/
+###< symfony/framework-bundle ###
+
+###> symfony/phpunit-bridge ###
+.phpunit.result.cache
+###< symfony/phpunit-bridge ###
+###> lexik/jwt-authentication-bundle ###
+/config/jwt/*.pem
+###< lexik/jwt-authentication-bundle ###
+
+###> friendsofphp/php-cs-fixer ###
+/.php-cs-fixer.php
+/.php-cs-fixer.cache
+###< friendsofphp/php-cs-fixer ###
+
+.deptrac.cache
