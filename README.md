@@ -1,1 +1,2 @@
 # Contest
+Platform for applications
