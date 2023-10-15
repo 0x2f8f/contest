@@ -29,6 +29,7 @@
 /bin/*
 !bin/console
 !bin/symfony_requirements
+/sources
 /sources/*/*
 
 # Assets and user uploads
