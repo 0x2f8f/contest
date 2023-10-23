@@ -1,4 +1,5 @@
 /sources
+/sources/*
 /sources/*/*
 /.idea
 /docker/.env

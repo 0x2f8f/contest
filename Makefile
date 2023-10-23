@@ -10,6 +10,9 @@ DOCKER_COMPOSE_PHP_FPM_EXEC = ${DOCKER_COMPOSE} exec -u www-data php-fpm
 ##################
 
 build:
+	${DOCKER_COMPOSE} build
+
+setup:
 	mkdir -p ./sources/api/public && ( [ -e ./sources/api/public/index.php ] || (touch ./sources/api/public/index.php && echo "api">./sources/api/public/index.php))
 	mkdir -p ./sources/web/public && ( [ -e ./sources/web/public/index.php ] || (touch ./sources/web/public/index.php && echo "web">./sources/web/public/index.php))
 	${DOCKER_COMPOSE} build
